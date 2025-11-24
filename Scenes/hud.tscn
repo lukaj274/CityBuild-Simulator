@@ -1,0 +1,114 @@
+[gd_scene load_steps=7 format=3 uid="uid://j23uhily32lk"]
+
+[ext_resource type="Script" uid="uid://bhxm7ka12g300" path="res://Scripts/UI/Hud.cs" id="1_6fbih"]
+[ext_resource type="FontFile" uid="uid://c5y4hkenrm6jo" path="res://UI/Font/Kenney Future.ttf" id="1_bjfho"]
+[ext_resource type="FontFile" uid="uid://cxxfs8k66fms6" path="res://UI/Font/Kenney Future Narrow.ttf" id="2_6fbih"]
+[ext_resource type="Script" uid="uid://c1e7c82n8xpl3" path="res://Scripts/UI/SchoolButton.cs" id="4_6fbih"]
+[ext_resource type="Script" uid="uid://cqix3grbkombs" path="res://Scripts/UI/Popup.cs" id="4_36asn"]
+[ext_resource type="Script" uid="uid://5jiu027r2cyl" path="res://Scripts/UI/PowerplantButton.cs" id="5_t1xeu"]
+
+[node name="UI" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 2.0
+offset_right = 2.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_6fbih")
+
+[node name="Labels" type="Control" parent="."]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TimeLabel" type="RichTextLabel" parent="Labels"]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = 793.0
+offset_right = 1112.0
+offset_bottom = 47.0
+grow_horizontal = 0
+theme_override_fonts/normal_font = ExtResource("1_bjfho")
+theme_override_font_sizes/normal_font_size = 40
+text = "Time: 00:00"
+horizontal_alignment = 2
+
+[node name="MoneyLabel" type="RichTextLabel" parent="Labels"]
+texture_filter = 1
+layout_mode = 1
+offset_right = 388.0
+offset_bottom = 47.0
+theme_override_fonts/normal_font = ExtResource("1_bjfho")
+theme_override_font_sizes/normal_font_size = 40
+text = "Money: $10000"
+
+[node name="ChangeBuildingButton" type="Button" parent="."]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -43.0
+offset_right = 596.0
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("2_6fbih")
+theme_override_font_sizes/font_size = 30
+text = "Change  Selected  Building"
+
+[node name="ViewStatsButton" type="Button" parent="."]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 630.0
+offset_top = -43.0
+offset_right = 1226.0
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("2_6fbih")
+theme_override_font_sizes/font_size = 30
+text = "Change  Selected  Building"
+
+[node name="Popup" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("4_36asn")
+
+[node name="ColorRect" type="ColorRect" parent="Popup"]
+layout_mode = 0
+offset_left = 27.0
+offset_top = 18.0
+offset_right = 1108.0
+offset_bottom = 591.0
+color = Color(0, 0, 1, 1)
+
+[node name="SchoolButton" type="Button" parent="Popup"]
+layout_mode = 0
+offset_left = 109.0
+offset_top = 150.0
+offset_right = 385.0
+offset_bottom = 206.0
+theme_override_fonts/font = ExtResource("1_bjfho")
+theme_override_font_sizes/font_size = 36
+text = "School"
+script = ExtResource("4_6fbih")
+
+[node name="PowerplantButton" type="Button" parent="Popup"]
+layout_mode = 0
+offset_left = 388.0
+offset_top = 149.0
+offset_right = 721.0
+offset_bottom = 207.0
+theme_override_fonts/font = ExtResource("1_bjfho")
+theme_override_font_sizes/font_size = 36
+text = "Powerplant"
+script = ExtResource("5_t1xeu")
+
+[connection signal="pressed" from="ChangeBuildingButton" to="." method="OnButtonPressed"]
