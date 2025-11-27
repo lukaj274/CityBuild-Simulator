@@ -4,6 +4,8 @@ using System;
 public partial class StartButton : TextureButton
 {
 	[Export] public PackedScene MainScene { get; set; }
+	[Export] public AudioStreamPlayer2D SoundPlayer { get; set; }
+	
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
@@ -17,5 +19,6 @@ public partial class StartButton : TextureButton
 	public void OnStartButtonPressed()
 	{
 		GetTree().ChangeSceneToPacked(MainScene);
+		SoundPlayer.Play();
 	}
 }
