@@ -33,4 +33,5 @@ Click={
 
 [rendering]
 
+textures/vram_compression/import_etc2_astc=true
 textures/basis_universal/zstd_supercompression=false
