@@ -24,7 +24,7 @@ public partial class Cursor : Area2D
 		
 		GlobalPosition = ScreenPos;
 
-		// Instantiate the selected scene
+		// [OLD CODE] Instantiate the selected scene
 		if (Input.IsMouseButtonPressed(MouseButton.Left))
 		{
 			// Variable to keep track of how many newScenes there are
