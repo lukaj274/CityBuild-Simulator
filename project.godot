@@ -10,10 +10,9 @@ config_version=5
 
 [application]
 
-config/name="CivicLearn2.0"
+config/name="CityBuild Simulator"
 run/main_scene="uid://d0kjinbhmfnby"
 config/features=PackedStringArray("4.5", "C#", "Forward Plus")
-config/icon="res://icon.svg"
 
 [display]
 

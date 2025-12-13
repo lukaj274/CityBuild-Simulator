@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ccun3efntnmu3"
-path="res://.godot/imported/CivicLearn-logo.png-b648ce190b2b80f5dd9944284a71a866.ctex"
+uid="uid://dpy870rebi0cs"
+path="res://.godot/imported/CityBuild-Simulator-Splash.png-47038f15252e2aebe9a7c70db6e4e414.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://CivicLearn-logo.png"
-dest_files=["res://.godot/imported/CivicLearn-logo.png-b648ce190b2b80f5dd9944284a71a866.ctex"]
+source_file="res://Art/Logo/CityBuild-Simulator-Splash.png"
+dest_files=["res://.godot/imported/CityBuild-Simulator-Splash.png-47038f15252e2aebe9a7c70db6e4e414.ctex"]
 
 [params]
 

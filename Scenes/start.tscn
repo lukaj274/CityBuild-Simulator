@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=3 uid="uid://d0kjinbhmfnby"]
 
-[ext_resource type="Texture2D" uid="uid://c0sfu0o2dp0fb" path="res://Art/Logo/Upscaled/Logo2.png" id="1_r48yj"]
+[ext_resource type="Texture2D" uid="uid://dpy870rebi0cs" path="res://Art/Logo/CityBuild-Simulator-Splash.png" id="1_pg4io"]
 [ext_resource type="Texture2D" uid="uid://djmn8qcxe48xo" path="res://UI/PNG/Extra/Double/icon_play_outline.png" id="2_o3wvq"]
 [ext_resource type="Script" uid="uid://ctyykhnj0vtyn" path="res://Scripts/UI/StartButton.cs" id="3_lb6bl"]
 [ext_resource type="Texture2D" uid="uid://sskq35sc63hu" path="res://UI/PNG/Extra/Double/icon_play_dark.png" id="3_pg4io"]
@@ -11,10 +11,12 @@
 [node name="Start" type="Node2D"]
 
 [node name="TextureRect" type="TextureRect" parent="."]
-offset_right = 3600.0
-offset_bottom = 2036.3634
+offset_left = -15.999999
+offset_top = -16.0
+offset_right = 3584.0
+offset_bottom = 2020.3633
 scale = Vector2(0.33, 0.33)
-texture = ExtResource("1_r48yj")
+texture = ExtResource("1_pg4io")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 offset_left = 264.0
