@@ -16,3 +16,6 @@ CivicLearn is licensed under the BSD 3-Clause License, which means that it can b
 Go to the Releases section to download a compiled binary for your platform. Instructions on how to run are provided.
 
 Or download a copy of the source, import it to Godot, and click the run button.
+
+## Note
+Project name will change to avoid confusion with an existing product.
